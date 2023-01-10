@@ -53,12 +53,16 @@ a {
 
 /* COLUMN */
 
-.col-3 {
+.col-1_3 {
     flex-basis: calc(100%/3);
 }
 
-.col-2 {
+.col-2_3 {
     flex-basis: calc(100%*2/3);
+}
+
+.col_full{
+    flex-basis: 100%;
 }
 
 /* BUTTONS */
