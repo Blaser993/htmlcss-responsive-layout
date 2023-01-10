@@ -62,6 +62,10 @@ a {
     justify-content: space-between;
 }
 
+.center{
+    text-align: center;
+}
+
 
 
 /* BUTTONS */
@@ -76,6 +80,11 @@ a {
 
 .button--medium{
     line-height: 46px;
+}
+
+.button--medium a{
+    padding: 0 36px;
+    align-items: center;
 }
 
 
@@ -133,6 +142,16 @@ a {
     padding: 26px;
 }
 
+.hero h2{
+    color: var(--blue);
+    font-size: 26px;
+}
+
+.hero p{
+    color: var(--dark);
+    font-size: 18px;
+}
+
 .card {
     background-color: var(--lightblue);
     border-radius: 20px;
@@ -146,18 +165,37 @@ a {
     margin: 0 -12px;
 }
 
-.container{
-    border: solid 1px red;
-}
-
-
 .col_figure,
 .col_article{
     flex-basis: 50%;
 }
 
+.hero figure img{
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: -24px;
+    display:block;
+}
+
 .col{
     border: 1px solid violet;
+    padding: 24px 36px;
+}
+
+.button.button--medium{
+    margin-top: 36px;
+}
+
+.icon_big{
+    font-size: 84px;
+}
+
+.icon_blue{
+    color: var(--blue);
+}
+
+.icon_space{
+    padding-right: 16px;
 }
 
 
@@ -166,18 +204,21 @@ a {
 @media only screen and (max-width: 991px) {
 
     .hero .card.row [class^="col"]{
+        flex-basis: 99%;
+    }
+
+    .col_figure{
         flex-basis: 100%;
     }
 
-    .col_figure,
     .col_article{
-    flex-basis: 60%;
-}
+        flex-basis: 100%;
+    }
 
     .hero figure img{
-        max-width: 50%;
+        max-width: 100%;
         text-align: center;
-        margin-bottom: -20px;
+        margin-bottom: -24px;
         padding-left: 36px;
         display: block;
     }
