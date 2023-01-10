@@ -43,8 +43,7 @@ a {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
 
 .space-between {
@@ -117,6 +116,15 @@ a {
     border-radius: 20px;
     border: 2px solid #333333;
     min-height: 200px;
+    margin: 0 24px;
+}
+
+
+
+.hero .row{
+    row-gap: 24px;
+    margin: 0 -24px;
+    padding: 32px;
 }
 
 /* MEDIAUERY HERO */
