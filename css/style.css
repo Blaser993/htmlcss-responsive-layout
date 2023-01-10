@@ -91,6 +91,7 @@ a {
     line-height: 46px;
 }
 
+
 .button--white {
     color: var(--dark);
     background-color: white;
@@ -143,11 +144,16 @@ a {
 
 .card {
     background-color: var(--lightblue);
-    padding: 20px;
+    padding: 18px;
     border-radius: 20px;
     border: 2px solid #333333;
-    min-height: 200px;
+    min-height:fit-content;
+    height: 100%;
     margin: 0 12px;
+}
+
+.card.row .col_full{
+    height: 100% + 36px;
 }
 
 .spacing_row{
@@ -159,11 +165,13 @@ a {
 .hero h2{
     font-size: 26px;
     color: var(--blue);
+    margin-bottom: 28px;
 }
 
 .hero p{
     font-size: 18px;
-    color: grey;
+    color: var(--dark);
+    margin-bottom: 28px;
 }
 
 .hero .icon {
@@ -171,10 +179,28 @@ a {
 }
 
 .hero figure img{
+    width: 80%;
+    text-align: center;
     margin-bottom: -20px;
+    padding-left: 36px;
     display: block;
 }
 
+.icon_big{
+    font-size: 84px;
+    margin: 28px 0;
+}
+
+.icon_blue{
+    color: var(--blue);
+}
+
+
+
+.spaced{
+    align-content: space-around;
+    text-align: center;
+}
 
 /* MEDIAUERY HERO */
 
