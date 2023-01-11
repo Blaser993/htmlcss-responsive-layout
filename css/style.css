@@ -418,9 +418,9 @@ a {
 
 .benefits .col.col_full {
     text-align: center;
-   margin-bottom: 36px;
-   color: white;
-   font-size: 28px;
+    margin-bottom: 36px;
+    color: white;
+    font-size: 28px;
 }
 
 .benefits .col-card{
@@ -460,10 +460,24 @@ a {
     .benefits .col-card{
         flex-basis: calc(100%/2);
     }
+
+
 }
 
 @media screen and (max-width:575px){
     .benefits .col-card{
         flex-basis: calc(100%);
     }
+
+    .card__number{
+        font-size: 36px;
+    }
+
+    .benefits .col.col_full {
+        font-size: 18px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
+
+/* ABOUT US SECTION */
