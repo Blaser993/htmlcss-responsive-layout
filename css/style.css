@@ -431,7 +431,25 @@ a {
     background-color: white;
     color: var(--purple);
     margin: 0 16px;
-    padding: 36px;
+    padding: 32px;
+}
+
+.card__number,
+.card__title,
+.card__text{
+    margin-bottom: 32px;
+}
+
+.card__number{
+    font-size: 54px;
+}
+
+.card__title{
+    font-size: 26px;
+}
+
+.card__text{
+    color: var(--dark);
 }
 
 
