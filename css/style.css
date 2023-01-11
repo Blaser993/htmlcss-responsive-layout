@@ -390,3 +390,12 @@ a {
     color: var(--purple);
     margin: 24px 0;
 }
+
+@media screen and (max-width:575px){
+
+    .card-partner.row{
+        flex-direction:column;
+        text-align: center;
+    }
+    
+}
