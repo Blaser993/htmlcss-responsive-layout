@@ -66,7 +66,7 @@ a {
 
 .row {
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
 }
 
 .space-between {
@@ -193,7 +193,7 @@ a {
 }
 
 .col{
-
+    border:orange solid 2px;
     padding: 24px 36px;
 }
 
@@ -221,7 +221,7 @@ a {
 
     .hero .card .row [class^="col"]{
         flex-basis: 100%;
-    
+
     }
 
     .col_figure{
@@ -320,4 +320,45 @@ a {
     .card-planning{
         padding: 16px 20px;
     }
+}
+
+
+/* sezione partner */
+
+.section-partner{
+    padding-top:110px ;
+    padding-bottom:55px ;
+}
+
+.section-partner .col{
+    padding: 0;
+}
+
+.section-partner .row{
+    flex-direction: column;
+    gap:32px;
+}
+
+.card-partner.row{
+    flex-direction: row;
+}
+
+.section-partner .col__figure{
+    flex-basis: 200px;
+    flex-shrink: 0;
+}
+
+.section-partner figure img{
+    max-width: 100%;
+    display:block;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.section-partner .col__text{
+    flex-basis:0;
+    flex-grow: 1;
+
 }
