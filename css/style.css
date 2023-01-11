@@ -36,9 +36,11 @@ a {
 /* LAYOUT */
 
 .container {
-    max-width: 1140px;
+    max-width: 1204px;
     margin: 0 auto;
+    padding: 0 32px;
 }
+
 
 .col1{
     flex-basis: calc(100%/3*1);
@@ -102,7 +104,7 @@ a {
 
 .main-header {
     background-color: var(--blue);
-    padding: 19px 26px;
+    padding: 19px 0px;
     color:  white;
 }
 
@@ -139,7 +141,7 @@ a {
 /* HERO */
 
 .hero{
-    padding: 26px;
+    padding: 52px 0px;
 }
 
 .hero h2{
@@ -161,8 +163,11 @@ a {
 }
 
 .hero .row{
-    row-gap: 24px;
     margin: 0 -12px;
+}
+
+.gutter{
+    row-gap: 24px;
 }
 
 .col_figure,
@@ -192,6 +197,7 @@ a {
 
 .icon_blue{
     color: var(--blue);
+    padding: 12px;
 }
 
 .icon_space{
@@ -203,27 +209,20 @@ a {
 
 @media only screen and (max-width: 991px) {
 
-    .hero .card.row [class^="col"]{
-        flex-basis: 99%;
+    .hero .card .row [class^="col"]{
+        flex-basis: 100%;
+    
     }
 
     .col_figure{
-        flex-basis: 100%;
+        flex-basis: 60%;
     }
 
     .col_article{
         flex-basis: 100%;
     }
 
-    .hero figure img{
-        max-width: 100%;
-        text-align: center;
-        margin-bottom: -24px;
-        padding-left: 36px;
-        display: block;
-    }
 }
-
 
 
 @media only screen and (max-width: 575px) {
