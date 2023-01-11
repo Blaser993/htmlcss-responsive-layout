@@ -305,8 +305,19 @@ a {
     .section-planning .col{
         flex-basis: 100%;
     }
+
+    .col__title{
+        font-size:72px ;
+    }
 }
 
 @media screen and (max-width:575px){
 
+    .col__title{
+        font-size:24px ;
+    }
+
+    .card-planning{
+        padding: 16px 20px;
+    }
 }
