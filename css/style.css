@@ -37,6 +37,15 @@ a {
 
 .container {
     max-width: 1204px;
+
+}
+
+.container-small{
+    max-width: 944px;
+}
+
+.container,
+.container-small{
     margin: 0 auto;
     padding: 0 32px;
 }
@@ -99,6 +108,7 @@ a {
     color: white;
     background-color: var(--blue);
 }
+
 
 /* HEADER */
 
@@ -183,7 +193,7 @@ a {
 }
 
 .col{
-    border: 1px solid violet;
+
     padding: 24px 36px;
 }
 
@@ -233,7 +243,70 @@ a {
 }
 
 
+/* sezione planning */
+
+.section-planning{
+    background-color: var(--purple);
+    padding-top:110px ;
+    padding-bottom:55px ;
+}
 
 
+.section-planning .col{
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 0;
+}
 
+.section-planning .row{
+    gap: 60px;
+}
 
+.card-planning{
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding:32px 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.card-planning p{
+    font-size: 14px;
+    line-height: 1.7em;
+}
+
+.card-planning img{
+    width: 70%;
+}
+
+.section-planning .col-card{
+    align-self: flex-end;
+}
+
+.section-planning .col__img{
+    margin-bottom: 100px;
+}
+
+.section-planning .col__title{
+    margin-bottom: 50px;
+}
+
+.section-planning .col{
+    color: white;
+}
+
+/* MEDIAQUERY SEZION-PLANNING */
+
+@media screen and (max-width:991px){
+    .section-planning .col{
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width:575px){
+
+}
