@@ -339,6 +339,15 @@ a {
     gap:32px;
 }
 
+.card-partner{
+    background-color: var(--purple);
+    border-radius: 50px;
+    padding: 36px 16px;
+    color: white;
+    align-items: center;
+    font-size: 24px;
+}
+
 .card-partner.row{
     flex-direction: row;
 }
@@ -357,8 +366,27 @@ a {
     border-radius: 100px;
 }
 
-.section-partner .col__text{
+.card-partner .col__text{
     flex-basis:0;
     flex-grow: 1;
+}
 
+
+.section-partner .col__text p{
+    margin-bottom: 16px;
+}
+
+.col__article{
+    text-align: center;
+}
+
+
+.section-partner .col__subtitle{
+    font-size: 24px;
+}
+
+.section-partner .col__title{
+    font-size: 46px;
+    color: var(--purple);
+    margin: 24px 0;
 }
