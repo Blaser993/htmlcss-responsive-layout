@@ -391,11 +391,60 @@ a {
     margin: 24px 0;
 }
 
+
+/* MEDIAQUERY PER SEZIONE PARTNER */
+
 @media screen and (max-width:575px){
 
     .card-partner.row{
         flex-direction:column;
         text-align: center;
     }
-    
+
+}
+
+/* SEZIONE BENEFIT */
+
+.benefits{
+    background-color: var(--purple);
+    padding-top: 110px;
+    padding-bottom: 55px;
+
+}
+
+.benefits .row{
+    margin:-16px
+}
+
+.benefits .col.col_full {
+    text-align: center;
+   margin-bottom: 36px;
+   color: white;
+   font-size: 28px;
+}
+
+.benefits .col-card{
+    flex-basis: calc(100%/3);
+}
+
+.benefits .card{
+    background-color: white;
+    color: var(--purple);
+    margin: 0 16px;
+    padding: 36px;
+}
+
+
+/* MEDIAQUERY PER SEZIONE BENEFITS */
+
+@media screen and (max-width:991px){
+    .benefits .col-card{
+        flex-basis: calc(100%/2);
+    }
+}
+
+@media screen and (max-width:575px){
+    .benefits .col-card{
+        flex-basis: calc(100%);
+    }
 }
