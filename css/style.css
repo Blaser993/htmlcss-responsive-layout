@@ -198,7 +198,6 @@ a {
 }
 
 .col{
-    border:orange solid 2px;
     padding: 24px 36px;
 }
 
@@ -507,6 +506,7 @@ a {
 
 .card__quote{
     margin-top: 36px;
+    position: relative;
 }
 
 .card__quote img{
@@ -529,7 +529,7 @@ a {
 .quote{
     position: absolute;
     font-size: 84px;
-    right: 208px;
+    left: 180px;
     color: var(--purple);
 }
 
